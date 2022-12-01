@@ -140,11 +140,10 @@ def is_cuda(a,b,c):
         return False
         
 def post_message(webhook, payload, x,y,z, ip):
-    webhook = "<Slack_Web_hook_here"
+    webhook = "<Slack_Web_hook_here>"
     a = ":eyepatch_morty:" 
     b = ":bananadance:"
     # """Post a message to slack using a webhook url."""
     payload = {'text': f' The IP Address is: {ip} \n\nIs this a Barracuda IP ?: {x}  \n\nIs this a Org a Cloud Provider ?: {y}  \n\nIs this ISP a Cloud Provider ?: {z} '}
-    #payload = {'text': f' Is this Barracuda?: {x}  ":eyepatch_morty:"  \n\nIs this Org Cloud?: {y} ":eyepatch_morty:" ":bananadance:" \n\nIs this ISP Cloud?:' {z} ":eyepatch_morty:"}
     return requests.post(webhook, json.dumps(payload))
 
