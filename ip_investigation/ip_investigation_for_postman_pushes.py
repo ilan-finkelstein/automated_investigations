@@ -140,7 +140,7 @@ def is_cuda(a,b,c):
         return False
         
 def post_message(webhook, payload, x,y,z, ip):
-    webhook = "https://hooks.slack.com/services/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"
+    webhook = "<Slack_Web_hook_here"
     a = ":eyepatch_morty:" 
     b = ":bananadance:"
     # """Post a message to slack using a webhook url."""
